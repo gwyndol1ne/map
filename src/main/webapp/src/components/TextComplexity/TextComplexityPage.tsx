@@ -5,7 +5,6 @@ type Metric = {
     name: string;
     value: number | string;
     description: string;
-    detailedInfo: string;
 };
 
 interface MetricsResultProps {
@@ -43,7 +42,6 @@ const MetricsResult: React.FC<MetricsResultProps> = ({ data }) => {
                 <div className="metric-details">
                     <button className="close-button" onClick={handleClosePanel}>Закрыть</button>
                     <h3>{selectedMetric.name}</h3>
-                    <p>{selectedMetric.detailedInfo}</p>
                 </div>
             )}
         </div>
